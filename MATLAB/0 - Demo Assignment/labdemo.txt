@@ -1,0 +1,61 @@
+format compact
+% Kelci Mensah
+% 3194
+% Section C2
+% Math 250 MATLAB Lab Demo
+rand('seed', 3194)
+% Question 1(a)
+A = [0 1 2; 3 4 5]
+A =
+     0     1     2
+     3     4     5
+a = [9
+-1]
+a =
+     9
+    -1
+whos
+  Name      Size            Bytes  Class     Attributes
+
+  A         2x3                48  double
+  a         2x1                16  double
+
+% Question 1(b)
+a12 = A(1,2)
+a12 =
+     1
+% Question 1(c)
+% Matrix A is not a square matrix because there are entries where i /= j that do not equal 0
+D = rdiag(3)
+D =
+     2     0     0
+     0     7     0
+     0     0     1
+% Matrix D is a diagonal because only entries where i = j possess integers that do not equal 0
+% Question 1(e)
+E = 23*D
+E =
+    46     0     0
+     0   161     0
+     0     0    23
+F = 0*D
+F =
+     0     0     0
+     0     0     0
+     0     0     0
+G = -17*D
+G =
+   -34     0     0
+     0  -119     0
+     0     0   -17
+H = 0.1*D
+H =
+    0.2000         0         0
+         0    0.7000         0
+         0         0    0.1000
+% Question 1(f)
+% "If B is a diagonal matrix and c is any scalar, then cB is a diagonal matrix":
+% This statement is true because as this is just a scalar operation, this does not alter
+% the literal form of the original matrix unless the scalar is 0. Because the matrix
+% form is not altered, cB is still a diagonal matrix.
+diary off
